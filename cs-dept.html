@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Information - GMU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="department-styles.css">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006633;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagelogo.jpeg" alt="GMU Logo" height="40">
+                <img src="Header_logo_George-Mason-University-2024_0.png" alt="GMU Logo" class="logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cs-department.html">Department</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="survey.html">Survey</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub Navigation for MS Degrees -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#degreesNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="degreesNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cs-degree">MS in Computer Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#security-degree">MS in Information Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#information-degree">MS in Information Systems</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#data-degree">MS in Data Analytics</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add after the navigation and before the main content -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Department of Computer Science</h1>
+            <p>Shaping the Future of Technology Through Innovation and Education</p>
+        </div>
+    </section>
+
+
+    <!-- Rest of the content -->
+    <div class="container mt-5">
+        <!-- Department Info Section -->
+        <section class="department-info mt-5">
+            <h2>About Our Department</h2>
+            <p class="lead">Welcome to George Mason University's Department of Computer Science, where innovation meets education. Our department is at the forefront of technological advancement, offering cutting-edge programs that prepare students for leadership roles in the computing industry.</p>
+            <p>We pride ourselves on our diverse faculty, state-of-the-art research facilities, and strong industry connections. Our programs combine theoretical foundations with practical applications, ensuring our graduates are well-equipped for both industry positions and academic pursuits.</p>
+        </section>
+
+        <!-- Add this after the department-info section and before the courses section -->
+        <section class="ms-programs mt-5">
+            <h2>Our Master's Programs</h2>
+            <ul class="degree-list">
+                <li class="degree-item">
+                    <a href="#cs-degree" class="degree-link">
+                        <h4>MS in Computer Science</h4>
+                        <p>Advanced study in algorithms, artificial intelligence, and software engineering.</p>
+                    </a>
+                </li>
+                <li class="degree-item">
+                    <a href="#security-degree" class="degree-link">
+                        <h4>MS in Information Security</h4>
+                        <p>Specialized focus on cybersecurity, network security, and secure software development.</p>
+                    </a>
+                </li>
+                <li class="degree-item">
+                    <a href="#information-degree" class="degree-link">
+                        <h4>MS in Information Systems</h4>
+                        <p>Comprehensive study of database systems, information architecture, and system design.</p>
+                    </a>
+                </li>
+                <li class="degree-item">
+                    <a href="#data-degree" class="degree-link">
+                        <h4>MS in Data Analytics Engineering</h4>
+                        <p>In-depth exploration of data mining, big data analytics, and predictive modeling.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="courses mt-4">
+            <h2>Required Courses</h2>
+
+            <!-- MS Degrees Sections -->
+            <section id="cs-degree" class="degree-section mt-5">
+                <h3>MS in Computer Science</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 583</td>
+                                <td>Analysis of Algorithms</td>
+                            </tr>
+                            <tr>
+                                <td>CS 530</td>
+                                <td>Mathematical Foundations of Computer Science</td>
+                            </tr>
+                            <tr>
+                                <td>CS 531</td>
+                                <td>Computer Systems and Fundamentals of Systems Programming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="security-degree" class="degree-section mt-5">
+                <h3 class="mt-4">MS in Information Security </h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ISA 562</td>
+                                <td>Information Security Theory and Practice</td>
+                            </tr>
+                            <tr>
+                                <td>ISA 656</td>
+                                <td>Network Security</td>
+                            </tr>
+                            <tr>
+                                <td>ISA 673</td>
+                                <td>Operating Systems Security</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="information-degree" class="degree-section mt-5">
+                <h3 class="mt-4">MS in Information Systems</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 550</td>
+                                <td>Database Systems</td>
+                            </tr>
+                            <tr>
+                                <td>INFS 580</td>
+                                <td>Analytics: Big Data to Information</td>
+                            </tr>
+                            <tr>
+                                <td>INFS 611</td>
+                                <td>Rapid Information Systems Prototyping</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="data-degree" class="degree-section mt-5">
+                <h3 class="mt-4">MS in Data Analytics Engineering</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS 584</td>
+                                <td>Theory and Applications of Data Mining</td>
+                            </tr>
+                            <tr>
+                                <td>AIT 580</td>
+                                <td>Analytics: Big Data to Information</td>
+                            </tr>
+                            <tr>
+                                <td>DAEN 690</td>
+                                <td>Data Analytics Project</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+        <div class="text-center mt-5 mb-5">
+            <a href="survey.html" class="btn btn-success btn-lg">Take Our Department Survey</a>
+        </div>
+    </div>
+
+    <!-- Add at the bottom of the page -->
+    <footer class="department-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p>Department of Computer Science<br>
+                    George Mason University<br>
+                    4400 University Drive<br>
+                    Fairfax, VA 22030</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

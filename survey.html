@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Survey - GMU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="survey-styles.css">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006633;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="imagelogo.jpeg" alt="GMU Logo" height="40">
+                <img src="Header_logo_George-Mason-University-2024_0.png" alt="GMU Logo" class="logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cs-dept.html">Department</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="survey.html">Survey</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="header-box">
+            <h1>CS Department Survey</h1>
+        </div>
+
+        <div class="survey-container">
+            <form class="needs-validation" autocomplete="on" novalidate>
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <label for="username" class="form-label required">Full Name</label>
+                        <input type="text" class="form-control" id="username" required autofocus>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label required">Email Address</label>
+                        <input type="email" class="form-control" id="email" 
+                               placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <label for="street" class="form-label required">Street Address</label>
+                        <input type="text" class="form-control" id="street" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="city" class="form-label required">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-3">
+                        <label for="state" class="form-label required">State</label>
+                        <input type="text" class="form-control" id="state" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="zip" class="form-label required">ZIP Code</label>
+                        <input type="text" class="form-control" id="zip" 
+                               pattern="[0-9]{5}" placeholder="12345" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="phone" class="form-label required">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" 
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                               placeholder="123-456-7890" required>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <label for="website" class="form-label">Personal Website</label>
+                        <input type="url" class="form-control" id="website" 
+                               placeholder="https://example.com">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="visit-date" class="form-label required">Visit Date</label>
+                        <input type="date" class="form-control" id="visit-date" required>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <label for="grad-month" class="form-label">High School Graduation Month</label>
+                        <input list="months" id="grad-month" class="form-control">
+                        <datalist id="months">
+                            <option value="January">
+                            <option value="February">
+                            <option value="March">
+                            <option value="April">
+                            <option value="May">
+                            <option value="June">
+                            <option value="July">
+                            <option value="August">
+                            <option value="September">
+                            <option value="October">
+                            <option value="November">
+                            <option value="December">
+                        </datalist>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="grad-year" class="form-label">Graduation Year</label>
+                        <input type="text" class="form-control" id="grad-year" 
+                               pattern="[0-9]{4}" placeholder="YYYY">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">What did you like most about the campus?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-students">
+                        <label class="form-check-label" for="like-students">Students</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-location">
+                        <label class="form-check-label" for="like-location">Location</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-campus">
+                        <label class="form-check-label" for="like-campus">Campus</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-atmosphere">
+                        <label class="form-check-label" for="like-atmosphere">Atmosphere</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-dorms">
+                        <label class="form-check-label" for="like-dorms">Dorm Rooms</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="like-sports">
+                        <label class="form-check-label" for="like-sports">Sports</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label required">How did you hear about us?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="source" id="source-friends" required>
+                        <label class="form-check-label" for="source-friends">Friends</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="source" id="source-tv">
+                        <label class="form-check-label" for="source-tv">Television</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="source" id="source-internet">
+                        <label class="form-check-label" for="source-internet">Internet</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="source" id="source-other">
+                        <label class="form-check-label" for="source-other">Other</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="recommendation" class="form-label required">How likely are you to recommend GMU?</label>
+                    <select class="form-select" id="recommendation" required>
+                        <option value="">Choose an option</option>
+                        <option value="very-likely">Very Likely</option>
+                        <option value="likely">Likely</option>
+                        <option value="unlikely">Unlikely</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label for="comments" class="form-label">Additional Comments</label>
+                    <textarea class="form-control" id="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg">Submit Survey</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Table Styling */
+
+:root {
+    --gmu-green: #006633;
+    --gmu-yellow: #FFCC33;
+}
+
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.table-bordered {
+    border: 2px solid var(--gmu-green);
+}
+
+.table thead {
+    background-color: var(--gmu-green);
+    color: white;
+}
+
+.table thead th {
+    border-bottom: 3px solid var(--gmu-yellow);
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 204, 51, 0.1);
+    cursor: pointer;
+}
+
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 102, 51, 0.05);
+}
+
+/* Custom table header style */
+.table-success {
+    background-color: var(--gmu-green) !important;
+    color: white;
+}
+
+.table-success th {
+    border-color: var(--gmu-yellow) !important;
+}
+
+/* Responsive table container */
+.table-responsive {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Course table specific styling */
+.course-table {
+    margin-top: 1rem;
+}
+
+.course-table th:first-child {
+    width: 30%;
+}
+
+/* Table caption styling */
+.table caption {
+    color: var(--gmu-green);
+    font-weight: bold;
+    padding: 10px;
+    caption-side: top;
+    text-align: center;
+}
+
+/* Table header cell padding */
+.table th {
+    padding: 15px;
+}
+
+/* Column specific styling */
+.course-number {
+    font-weight: 600;
+    color: var(--gmu-green);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .table thead {
+        font-size: 0.9rem;
+    }
+    
+    .table td, .table th {
+        padding: 10px;
+    }
+}
